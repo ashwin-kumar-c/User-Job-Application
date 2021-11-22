@@ -47,14 +47,14 @@ const ListingUsers = (props) => {
                                 <tbody>
                                     { appliedJob.map((ele, i) => {
                                         return (
-                                            <tr key={ele._id}>
-                                                <td>{ele.name}</td>
-                                                <td>{ele.skills}</td>
-                                                <td>{ele.experience}</td>
-                                                <td>{ele.createdAt}</td>
-                                                <td><button className="btn btn-info" onClick={() => {
+                                            <tr key={ ele._id }>
+                                                <td>{ ele.name }</td>
+                                                <td>{ ele.skills }</td>
+                                                <td>{ ele.experience }</td>
+                                                <td>{ ele.createdAt }</td>
+                                                <td> <button className="btn btn-info" onClick={() => {
                                                     handleDisplay(ele._id)
-                                                }}>View Details</button></td>
+                                                }}> View Details </button> </td>
                                                 <td><SwitchButtons
                                                     {...ele}
                                                     updateItem={ updateItem }
@@ -67,27 +67,27 @@ const ListingUsers = (props) => {
                         </div>
                     </div>
 
-                    <Modal show={show} onHide={handleClose}>
+                    <Modal show={ show } onHide={ handleClose }>
                         <Modal.Header>
-                            <Modal.Title><h4>{user.name} Profile</h4></Modal.Title>
+                            <Modal.Title><h4>{ user.name } Profile</h4></Modal.Title>
                         </Modal.Header>
                         <Modal.Body>    
                             { Object.keys(user).length > 0 && (
                             <>
                             <div className="d-flex justify-content-between">
-                                <h5>Contact No</h5> <span>{user.phone}</span>
+                                <h5>Contact No</h5> <span>{ user.phone }</span>
                             </div>
                             <div className="d-flex justify-content-between">
-                                <h5>Email ID</h5> <span>{user.email}</span>
+                                <h5>Email ID</h5> <span>{ user.email }</span>
                             </div>
                             <div className="d-flex justify-content-between">
                                 <h5>Skills</h5> 
                                 <ul className="list-unstyled"> { 
-                                user.skills.split(',').map((skill, i) => <li key={i}>{skill}</li>)
+                                user.skills.split(',').map((skill, i) => <li key={ i }>{ skill }</li>)
                                 } </ul>
                             </div>
                             <div className="d-flex justify-content-between">
-                                <h5>Experience</h5> <span>{user.experience}</span>
+                                <h5>Experience</h5> <span>{ user.experience }</span>
                             </div>
                             </> 
                         ) }

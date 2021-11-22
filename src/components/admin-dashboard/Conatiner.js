@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import ListingUsers from './ListingUsers'
-import Buttons from './Buttons'
 
 const Container = (props) => {
     const [ userData, setUserData ] = useState([])
@@ -51,11 +50,46 @@ const Container = (props) => {
     }
 
     return (
-        <div>
-            <Buttons handleClick={handleClick}/>        
+        <div className="btn-toolbar">
+            <button 
+                type="button"
+                className="btn btn-outline-primary mb-4 mx-auto" 
+                name="front-end" 
+                onClick={handleClick} 
+            > 
+            Front-End Developer 
+            </button>
+
+            <button 
+                type="button"
+                className="btn mb-4 mx-auto btn-outline-warning" 
+                name="node-js" 
+                onClick={handleClick} 
+            > 
+            Node.js Developer 
+            </button>
+            
+            <button 
+                type="button"
+                className="btn mb-4 mx-auto btn-outline-info" 
+                name="mean-stack" 
+                onClick={handleClick} 
+            > 
+            MEAN Stack Developer 
+            </button>
+            
+            <button 
+                type="button"
+                className="btn mb-4 mx-auto btn-outline-secondary" 
+                name="full-stack" 
+                onClick={handleClick} 
+            > 
+            FULL Stack Developer 
+            </button>
+
             <ListingUsers
-            appliedJob={appliedJob}
-            updateItem={updateItem} 
+                appliedJob={appliedJob}
+                updateItem={updateItem} 
             />
         </div>
     )
