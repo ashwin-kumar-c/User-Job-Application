@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import ListingJobs from './ListingJobs'
+import ListingUsers from './ListingUsers'
 import Buttons from './Buttons'
 
 const Container = (props) => {
@@ -53,7 +53,7 @@ const Container = (props) => {
     return (
         <div>
             <Buttons handleClick={handleClick}/>        
-            <ListingJobs
+            <ListingUsers
             appliedJob={appliedJob}
             updateItem={updateItem} 
             />

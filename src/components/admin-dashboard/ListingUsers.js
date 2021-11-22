@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Modal } from 'react-bootstrap'
 import SwitchButtons from './SwitchButtons'
 
-const ListingJobs = (props) => {
+const ListingUsers = (props) => {
     const { appliedJob, updateItem } = props
     const [ user, setUser ] = useState({})
     const [ show, setShow ] = useState(false)
@@ -102,4 +102,4 @@ const ListingJobs = (props) => {
     )
 }
 
-export default ListingJobs
+export default ListingUsers
