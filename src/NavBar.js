@@ -10,7 +10,7 @@ const NavBar = (props) => {
         <div>
             <nav className="navbar navbar-expand-md navbar-dark bg-dark" >
                 <div className="container">
-                    <h1 className="navbar-brand" > User Job Application App </h1>
+                    <h1 className="navbar-brand" > User Job Application </h1>
                     <button 
                         className="navbar-toggler"
                         type="button"

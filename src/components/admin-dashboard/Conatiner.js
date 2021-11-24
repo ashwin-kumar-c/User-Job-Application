@@ -56,8 +56,7 @@ const Container = (props) => {
                 className="btn btn-outline-primary mb-4 mx-auto" 
                 name="front-end" 
                 onClick={handleClick} 
-            > 
-            Front-End Developer 
+            >Front-End Developer 
             </button>
 
             <button 
@@ -65,8 +64,7 @@ const Container = (props) => {
                 className="btn mb-4 mx-auto btn-outline-warning" 
                 name="node-js" 
                 onClick={handleClick} 
-            > 
-            Node.js Developer 
+            >Node.js Developer 
             </button>
             
             <button 
@@ -74,8 +72,7 @@ const Container = (props) => {
                 className="btn mb-4 mx-auto btn-outline-info" 
                 name="mean-stack" 
                 onClick={handleClick} 
-            > 
-            MEAN Stack Developer 
+            >MEAN Stack Developer 
             </button>
             
             <button 
@@ -83,13 +80,12 @@ const Container = (props) => {
                 className="btn mb-4 mx-auto btn-outline-secondary" 
                 name="full-stack" 
                 onClick={handleClick} 
-            > 
-            FULL Stack Developer 
+            >FULL Stack Developer 
             </button>
 
             <ListingUsers
-                appliedJob={appliedJob}
-                updateItem={updateItem} 
+                appliedJob={ appliedJob }
+                updateItem={ updateItem } 
             />
         </div>
     )
